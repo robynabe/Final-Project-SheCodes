@@ -1,0 +1,100 @@
+section {
+  background-color: #ffffff;
+  margin: 20px 20px;
+  max-width: 800px;
+  min-width: 800px;
+  padding: 15px 5px;
+  border-style: solid;
+  border-style: double;
+  border-width: 5px;
+  border-radius: 6px;
+  color: rgb(102, 101, 101);
+  font-family: "Noto Sans JP", sans-serif;
+  box-shadow: 6px 3px 3px 2px rgba(94, 56, 56, 0.1);
+}
+i {
+  margin: auto;
+  padding: 8px;
+  font-size: 50px;
+}
+input {
+  display: inline;
+  margin: auto;
+  padding: 5px;
+  border-width: 3px;
+  border-color: rgb(102, 101, 101);
+  border-radius: 6px;
+}
+.current-location,
+.search-button {
+  display: inline;
+  margin: auto;
+  padding: 5px;
+  background-color: #ffffff;
+  color: rgb(102, 101, 101);
+  border-color: rgb(102, 101, 101);
+  border-style: double;
+  border-width: 3px;
+  border-radius: 6px;
+}
+.fahrenheit,
+.celsius {
+  margin: 10px 5px 5px 2px;
+  padding: 15px 20px;
+  color: rgb(102, 101, 101);
+  font-size: 14px;
+  text-align: center;
+  border-color: rgb(102, 101, 101);
+  border-style: double;
+  border-width: 3px;
+  border-radius: 60px;
+  box-shadow: 5px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  background-color: rgb(102, 101, 101);
+  color: #ffffff;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: rgb(102, 101, 101);
+  color: #ffffff;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+h1 {
+  display: auto;
+  padding: 2px;
+}
+h2 {
+  display: inline;
+}
+.date-time-details {
+  margin-top: 5px;
+  margin-right: 30px;
+  padding: 5px;
+  background-color: #ffffff;
+}
+ul {
+  list-style: none;
+  text-align: left;
+}
+li::before {
+  content: "🌦 ";
+}
+.col {
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+.sunrise-sunset {
+  text-align: center;
+}
+
+footer {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: black;
+}

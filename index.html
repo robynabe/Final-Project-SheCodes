@@ -3,11 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Weather Site</title>
+    <title>Weather 🌦</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b3d11e9eef.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
+
   <body>
-    <h1>
-      My Weather Site
-    </h1>
+    <section>
+      <div class="container">
+        <div class="row1">
+          <form id="search-location">
+            <input type="text" placeholder="Search location" id="search-text-input" autocomplete="off" autofocus="on" />
+            <input type="submit" value="search" class="search-button" />
+            <button class="current-location" id="current-location">
+              Current location📍
+            </button>
+      </div>
+        <div class="row">
+          <div class="col-sm">
+              <button class="fahrenheit">°F</button>
+              <button class="celsius">°C</button>
+            </form>
+          </div>
+          <div class="col-sm">
+            <p id="date-time"><strong>May 4th, 2020 12:00pm</strong></p>
+            <h1 id="city"></h1>
+            <h2 id="temperature"></h2>
+            <span>°C</span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="date-time-details">
+            <ul id="weather-details">
+              <li>Wind <span id="wind-speed"></span>km/hr</li>
+              <li>Humidity <span id="humidity"></span>%</li>
+              <li>Precipitation 0 cm</li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            Sunrise <i class="fas fa-sun"> </i>
+            <i class="fas fa-long-arrow-alt-up"> </i> 5:43am
+          </div>
+          <div class="col-sm">
+            Sunset <i class="fas fa-sun"> </i>
+            <i class="fas fa-long-arrow-alt-down"> </i> 8:34pm
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>Coded by Robyn Abe</footer>
+    <script src="src/index-Week 4.js"></script>
   </body>
 </html>
