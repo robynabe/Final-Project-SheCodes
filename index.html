@@ -22,53 +22,49 @@
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-
   <body>
     <section>
       <div class="container">
-        <div class="row1">
-          <form id="search-location">
-            <input type="text" placeholder="Search location" id="search-text-input" autocomplete="off" autofocus="on" />
-            <input type="submit" value="search" class="search-button" />
-            <button class="current-location" id="current-location">
-              Current location📍
-            </button>
-      </div>
         <div class="row">
           <div class="col-sm">
-              <button class="fahrenheit">°F</button>
-              <button class="celsius">°C</button>
+            <h1 id="city">Vancouver</h1>
+            <p class="weather-icon">☁️</p>
+            <h2 id="Temperature">Temperature</h2>
+          </div>
+          <div class="col-sm">
+            <form id="search-location">
+              <input
+                type="text"
+                placeholder="search city name..."
+                id="search-input"
+                autocomplete="off"
+                autofocus="on"
+              />
+              <input type="submit" id="submit-input" />
             </form>
-          </div>
-          <div class="col-sm">
-            <p id="date-time"><strong>May 4th, 2020 12:00pm</strong></p>
-            <h1 id="city"></h1>
-            <h2 id="temperature"></h2>
-            <span>°C</span>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="date-time-details">
+            <p class="date-time"><strong> date and time</strong></p>
             <ul id="weather-details">
               <li>Wind <span id="wind-speed"></span>km/hr</li>
               <li>Humidity <span id="humidity"></span>%</li>
               <li>Precipitation 0 cm</li>
             </ul>
           </div>
-          <div class="col-sm">
-            Sunrise <i class="fas fa-sun"> </i>
-            <i class="fas fa-long-arrow-alt-up"> </i> 5:43am
-          </div>
-          <div class="col-sm">
-            Sunset <i class="fas fa-sun"> </i>
-            <i class="fas fa-long-arrow-alt-down"> </i> 8:34pm
-          </div>
+        </div>
+        <button class="fahrenheit">°F</button>
+        <button class="celsius">°C</button>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <div class="col-sm">
+          <p id="sunrise-time">Sunrise * Time</p>
+        </div>
+        <div class="col-sm">
+          <p id="sunset-time">Sunset * Time</p>
         </div>
       </div>
     </section>
-    <footer>Coded by Robyn Abe</footer>
-    <script src="src/index-Week 4.js"></script>
+    <footer>Designed and coded by Robyn Abe</footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
