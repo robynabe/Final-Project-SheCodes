@@ -12,16 +12,26 @@ section {
   border-radius: 20px;
   border-width: 3px;
 }
-h1,
-h2 {
+h1 {
   display: block;
   margin: 10px auto;
+  margin-bottom: 20px;
   padding: 10px;
+  font-size: 40px;
+  color: #001e47;
+}
+h2 {
+  display: inline;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 40px;
   color: #001e47;
 }
 .weather-icon {
-  display: block;
+  display: inline;
   margin: 8px;
+  color: #001e47;
+  font-size: 40px;
 }
 input {
   display: inline;
