@@ -36,6 +36,7 @@
               <input
                 type="text"
                 placeholder="search city name..."
+                class="text-input"
                 id="search-input"
                 autocomplete="off"
                 autofocus="on"
@@ -47,7 +48,9 @@
                 class="submit-button"
               />
             </form>
-            <p class="date-time"><strong> May 25th, 2020</strong></p>
+            <p id="date-time" class="date-time">
+              <strong> May 25th, 2020</strong>
+            </p>
             <ul id="weather-details">
               <li>Wind <span id="wind-speed"></span>km/hr</li>
               <li>Humidity <span id="humidity"></span>%</li>
@@ -57,6 +60,7 @@
         </div>
         <button class="fahrenheit">°F</button>
         <button class="celsius">°C</button>
+        <button class="current-location">Current 📍</button>
       </div>
     </section>
     <section class="section-2">
@@ -80,6 +84,6 @@
     <footer>
       Designed and coded by Robyn Abe
     </footer>
-    <script src="src/index.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
