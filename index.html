@@ -23,13 +23,14 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <section>
+    <section class="section-1">
       <div class="container">
         <div class="row">
           <div class="col-sm">
             <h1 id="city">Vancouver</h1>
-            <p class="weather-icon">☁️</p>
-            <h2 id="Temperature">Temperature</h2>
+            <h2 id="Temperature"></h2>
+            <span class="weather-icon"><i class="fas fa-cloud"></i></span>
+            15°C
           </div>
           <div class="col-sm">
             <form id="search-location">
@@ -40,7 +41,12 @@
                 autocomplete="off"
                 autofocus="on"
               />
-              <input type="submit" id="submit-input" />
+              <input
+                type="submit"
+                value="search"
+                id="submit-input"
+                class="submit-button"
+              />
             </form>
             <p class="date-time"><strong> date and time</strong></p>
             <ul id="weather-details">
@@ -54,17 +60,19 @@
         <button class="celsius">°C</button>
       </div>
     </section>
-    <section>
+    <section class="section-2">
       <div class="row">
         <div class="col-sm">
-          <p id="sunrise-time">Sunrise * Time</p>
+          <p id="sunrise-time" class="sun-time">Sunrise * Time</p>
         </div>
         <div class="col-sm">
-          <p id="sunset-time">Sunset * Time</p>
+          <p id="sunset-time" class="sun-time">Sunset * Time</p>
         </div>
       </div>
     </section>
-    <footer>Designed and coded by Robyn Abe</footer>
+    <footer>
+      Designed and coded by Robyn Abe
+    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>

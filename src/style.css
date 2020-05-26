@@ -1,0 +1,85 @@
+body {
+  background-color: #f2f7ff;
+}
+section {
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 25px 20px;
+  background-color: #ffffff;
+  max-width: 700px;
+  border-style: solid;
+  border-color: #001e47;
+  border-radius: 20px;
+  border-width: 3px;
+}
+h1 {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  color: #001e47;
+}
+h2 {
+  display: inline;
+  margin: 10px auto;
+  padding: 10px;
+  color: #001e47;
+}
+.weather-icon {
+  display: block;
+  margin: 8px;
+}
+input {
+  display: inline;
+  margin: auto;
+  margin-right: 6px;
+}
+.submit-button {
+  background-color: #f2f7ff;
+  color: #001e47;
+}
+.date-time {
+  display: block;
+  margin-top: 11px;
+}
+ul {
+  margin-top: 20px;
+  list-style: none;
+  text-align: left;
+  line-height: 30px;
+}
+li::before {
+  content: "🌦 ";
+}
+button {
+  margin: 8px;
+  padding: 10px 15px;
+  text-align: center;
+  background: #f2f7ff;
+  border-radius: 20px;
+  border-color: #001e47;
+  border-width: 2px;
+}
+.submit-button:hover,
+button:hover {
+  background-color: #001e47;
+  color: #ffffff;
+  transition: all ease-in-out 150ms;
+}
+.section-2 {
+  margin-top: 10px;
+}
+.sun-time {
+  margin: 10px 20px;
+  text-align: center;
+}
+i {
+  display: inline;
+  color: grey;
+  font-size: 40px;
+}
+footer {
+  display: block;
+  margin-top: 200px;
+  text-align: center;
+  color: #001e47;
+}
