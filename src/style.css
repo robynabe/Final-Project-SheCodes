@@ -12,14 +12,9 @@ section {
   border-radius: 20px;
   border-width: 3px;
 }
-h1 {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  color: #001e47;
-}
+h1,
 h2 {
-  display: inline;
+  display: block;
   margin: 10px auto;
   padding: 10px;
   color: #001e47;
@@ -69,14 +64,11 @@ button:hover {
   margin-top: 10px;
 }
 .sun-time {
-  margin: 10px 20px;
+  margin: 0 auto;
   text-align: center;
+  color: #001e47;
 }
-i {
-  display: inline;
-  color: grey;
-  font-size: 40px;
-}
+
 footer {
   display: block;
   margin-top: 200px;
