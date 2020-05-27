@@ -28,11 +28,17 @@ h2 {
   font-size: 40px;
   color: #001e47;
 }
+
 .weather-icon {
   display: inline;
   margin: 8px;
   color: #b7b7b7;
   font-size: 40px;
+}
+p {
+  display: block;
+  margin-top: 11px;
+  color: #001e47;
 }
 input {
   display: inline;
@@ -44,11 +50,6 @@ input {
 }
 .submit-button {
   background-color: #f2f7ff;
-  color: #001e47;
-}
-.date-time {
-  display: block;
-  margin-top: 11px;
   color: #001e47;
 }
 ul {
