@@ -46,16 +46,34 @@ function displayCurrentWeather(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
-  console.log(response);
 }
 
-function search(event) {
-  event.preventDefault();
+function searchCity(city) {
   let apiKey = "47aecf87524427e10968c44895784738";
-  let city = document.querySelector("#search-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayCurrentWeather);
 }
 
+function findCity(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-input").value;
+  searchCity(city);
+}
+function searchLocation(position) {
+  let apiKey = "47aecf87524427e10968c44895784738";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?=lat${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayCurrentWeather);
+}
+
+function findCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 let searchForm = document.querySelector("#search-location");
-searchForm.addEventListener("submit", search);
+searchForm.addEventListener("submit", findCity);
+
+let locationButton = document.querySelector("#current-location");
+locationButton.addEventListener("click", findCurrentLocation);
+
+searchCity("Hawaii");
