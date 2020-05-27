@@ -46,6 +46,8 @@ function displayCurrentWeather(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
+
+  celsiusTemp = response.data.main.temp;
 }
 
 function searchCity(city) {
@@ -59,21 +61,22 @@ function findCity(event) {
   let city = document.querySelector("#search-input").value;
   searchCity(city);
 }
-function searchLocation(position) {
-  let apiKey = "47aecf87524427e10968c44895784738";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?=lat${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayCurrentWeather);
+
+function showFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitValue = (celsiusTemp * 9) / 5 + 32;
+  let tempElement = document.querySelector("#temperature");
+  tempElement.innerHTML = Math.round(fahrenheitValue);
+  let degreeSign = document.querySelector("#degree-sign");
+  degreeSign.innerHTML = "°F";
 }
 
-function findCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
+let celsiusTemp = null;
 
 let searchForm = document.querySelector("#search-location");
 searchForm.addEventListener("submit", findCity);
 
-let locationButton = document.querySelector("#current-location");
-locationButton.addEventListener("click", findCurrentLocation);
+let fahrenheitButton = document.querySelector("#fahrenheit");
+fahrenheitButton.addEventListener("click", showFahrenheit);
 
 searchCity("Hawaii");
