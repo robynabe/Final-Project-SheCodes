@@ -71,6 +71,14 @@ function showFahrenheit(event) {
   degreeSign.innerHTML = "°F";
 }
 
+function showCelsius(event) {
+  event.preventDefault();
+  let celsiusValue = celsiusTemp;
+  let tempElement = document.querySelector("#temperature");
+  tempElement.innerHTML = Math.round(celsiusValue);
+  document.querySelector("#degree-sign").innerHTML = "°C";
+}
+
 let celsiusTemp = null;
 
 let searchForm = document.querySelector("#search-location");
@@ -79,4 +87,6 @@ searchForm.addEventListener("submit", findCity);
 let fahrenheitButton = document.querySelector("#fahrenheit");
 fahrenheitButton.addEventListener("click", showFahrenheit);
 
+let celsiusButton = document.querySelector("#celsius");
+celsiusButton.addEventListener("click", showCelsius);
 searchCity("Hawaii");
