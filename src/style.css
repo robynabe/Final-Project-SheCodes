@@ -16,7 +16,7 @@ section {
 h1 {
   display: block;
   margin: 10px auto;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding: 10px;
   font-size: 40px;
   color: #001e47;
@@ -29,15 +29,11 @@ h2 {
   color: #001e47;
 }
 
-.weather-icon {
-  display: inline;
-  margin: 8px;
-  color: #b7b7b7;
-  font-size: 40px;
-}
 p {
   display: block;
-  margin-top: 11px;
+  margin-left: 12px;
+  margin-bottom: 8px;
+
   color: #001e47;
 }
 input {
@@ -52,6 +48,9 @@ input {
   background-color: #f2f7ff;
   color: #001e47;
 }
+.date-time {
+  margin: 20px 0 20px 0px;
+}
 ul {
   margin-top: 20px;
   list-style: none;
@@ -59,9 +58,12 @@ ul {
   line-height: 30px;
   color: #001e47;
 }
-li::before {
-  content: "🌦 ";
+
+.detail-icons {
+  max-width: 40px;
+  max-height: 40px;
 }
+
 button {
   margin: 5px;
   padding: 10px 15px;
@@ -89,6 +91,7 @@ button:hover {
 footer {
   display: block;
   margin-top: 200px;
+  max-width: 700px;
   text-align: center;
   color: #001e47;
 }

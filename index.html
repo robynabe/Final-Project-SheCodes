@@ -28,10 +28,14 @@
         <div class="row">
           <div class="col-sm">
             <h1 id="city"></h1>
-            <p class="weather-icon"></p>
+            <p id="weather-description"></p>
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather icon"
+              id="icon"
+            />
             <h2 id="temperature"></h2>
             <span class="degrees" id="degree-sign">°C</span>
-            <p id="weather-description"></p>
           </div>
           <div class="col-sm">
             <form id="search-location">
@@ -54,9 +58,30 @@
               <strong> </strong>
             </p>
             <ul id="weather-details">
-              <li>Wind <span id="wind-speed"></span> km/hr</li>
-              <li>Humidity <span id="humidity"></span>%</li>
-              <li>Feels like <span id="real-feel"></span>°C</li>
+              <li>
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt="wind-icon"
+                  class="detail-icons"
+                />
+                Wind <span id="wind-speed"></span> km/hr
+              </li>
+              <li>
+                <img
+                  src="http://openweathermap.org/img/wn/02d@2x.png"
+                  alt="humidity-icon"
+                  class="detail-icons"
+                />
+                Humidity <span id="humidity"></span>%
+              </li>
+              <li>
+                <img
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  alt="real"
+                  class="detail-icons"
+                />
+                Feels like <span id="real-feel"></span>°C
+              </li>
             </ul>
           </div>
         </div>
@@ -84,7 +109,9 @@
       </div>
     </section>
     <footer>
-      Designed and coded by Robyn Abe
+      Designed and
+      <a href="https://github.com/robynabe/Final-Project-SheCodes"> coded </a>
+      by Robyn Abe
     </footer>
     <script src="src/app.js"></script>
   </body>
